@@ -20,7 +20,7 @@ public class HydrationEffect extends MobEffect {
         }
     }
 public boolean isDurationEffectTick(int duration, int amplifier) {
-    int interval = 10;
+    int interval = 1;
     return duration % interval == 0;
     }
 }
