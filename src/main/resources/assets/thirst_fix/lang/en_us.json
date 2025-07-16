@@ -1,0 +1,16 @@
+{
+"effect.thirst_fix.thirst": "Thirst",
+"effect.thirst_fix.hydration": "Hydration",
+"item.minecraft.potion.effect.thirst": "Potion of Thirst",
+"item.minecraft.potion.effect.thirst_long": "Potion of Thirst",
+"item.minecraft.potion.effect.hydration": "Potion of Hydration",
+"item.minecraft.potion.effect.hydration_long": "Potion of Hydration",
+"item.minecraft.splash_potion.effect.thirst": "Splash Potion of Thirst",
+"item.minecraft.splash_potion.effect.thirst_long": "Splash Potion of Thirst",
+"item.minecraft.splash_potion.effect.hydration": "Splash Potion of Hydration",
+"item.minecraft.splash_potion.effect.hydration_long": "Splash Potion of Hydration",
+"item.minecraft.lingering_potion.effect.thirst": "Lingering Potion of Thirst",
+"item.minecraft.lingering_potion.effect.thirst_long": "Lingering Potion of Thirst",
+"item.minecraft.lingering_potion.effect.hydration": "Lingering Potion of Hydration",
+"item.minecraft.lingering_potion.effect.hydration_long": "Lingering Potion of Hydration"
+}

@@ -1,0 +1,16 @@
+{
+"effect.thirst_fix.thirst": "干渴",
+"effect.thirst_fix.hydration": "解渴",
+"item.minecraft.potion.effect.thirst": "干渴药水",
+"item.minecraft.potion.effect.thirst_long": "干渴药水",
+"item.minecraft.potion.effect.hydration": "解渴药水",
+"item.minecraft.potion.effect.hydration_long": "解渴药水",
+"item.minecraft.splash_potion.effect.thirst": "喷溅型干渴药水",
+"item.minecraft.splash_potion.effect.thirst_long": "喷溅型干渴药水",
+"item.minecraft.splash_potion.effect.hydration": "喷溅型解渴药水",
+"item.minecraft.splash_potion.effect.hydration_long": "喷溅型解渴药水",
+"item.minecraft.lingering_potion.effect.thirst": "滞留型干渴药水",
+"item.minecraft.lingering_potion.effect.thirst_long": "滞留型干渴药水",
+"item.minecraft.lingering_potion.effect.hydration": "滞留型解渴药水",
+"item.minecraft.lingering_potion.effect.hydration_long": "滞留型解渴药水"
+}
