@@ -12,7 +12,7 @@ public class ThirstEffect extends MobEffect {
         if (entity instanceof Player player) {
             player.getCapability(ModCapabilities.PLAYER_THIRST, null).ifPresent((cap) -> {
                 if (!player.level().isClientSide()) {
-                    cap.addExhaustion(player, (float)(8 + amplifier * 4));
+                    cap.addExhaustion(player, (float)(2 + amplifier * 0.1));
                 }
             });
         }
