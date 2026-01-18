@@ -27,7 +27,7 @@ public class ThirstFix {
 
     public ThirstFix() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        ThirstFix.register(bus); // 确保调用注册方法
+        ThirstFix.register(bus);
     }
     public static void register(IEventBus eventBus) {
         EFFECTS.register(eventBus);
