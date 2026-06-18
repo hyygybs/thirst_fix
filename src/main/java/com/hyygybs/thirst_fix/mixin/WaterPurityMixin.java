@@ -1,7 +1,7 @@
 package com.hyygybs.thirst_fix.mixin;
 
+import cn.mlus.thirst.content.purity.WaterPurity;
 import com.hyygybs.thirst_fix.ThirstFix;
-import dev.ghen.thirst.content.purity.WaterPurity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import org.spongepowered.asm.mixin.Mixin;
@@ -21,7 +21,7 @@ public abstract class WaterPurityMixin {
     private static MobEffectInstance replaceHungerWithThirst(MobEffectInstance original) {
         if (original.getEffect() == MobEffects.HUNGER) {
             return new MobEffectInstance(
-                    ThirstFix.THIRST.get(),
+                    ThirstFix.THIRST,
                     original.getDuration(),
                     original.getAmplifier(),
                     original.isAmbient(),

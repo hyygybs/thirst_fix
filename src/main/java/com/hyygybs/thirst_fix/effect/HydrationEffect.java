@@ -1,26 +1,31 @@
 package com.hyygybs.thirst_fix.effect;
 
-import dev.ghen.thirst.foundation.common.capability.ModCapabilities;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import cn.mlus.thirst.foundation.common.capability.ModAttachment;
 
 public class HydrationEffect extends MobEffect {
     public HydrationEffect() {
         super(MobEffectCategory.BENEFICIAL, 9564927);
     }
-    public void applyEffectTick(LivingEntity entity, int amplifier) {
+
+    @Override
+    public boolean applyEffectTick(LivingEntity entity, int amplifier) {
         if (entity instanceof Player player) {
-            player.getCapability(ModCapabilities.PLAYER_THIRST, null).ifPresent((cap) -> {
-                if (!player.level().isClientSide) {
-                cap.drink(player, amplifier + 1, (int) 1.0F);
-                }
-            });
+            player.getExistingData(ModAttachment.PLAYER_THIRST)
+                    .ifPresent(thirst -> {
+                        if (!player.level().isClientSide) {
+                            thirst.drink(amplifier + 1, 1);
+                        }
+                    });
         }
+        return true;
     }
-public boolean isDurationEffectTick(int duration, int amplifier) {
-    int interval = 1;
-    return duration % interval == 0;
+
+    @Override
+    public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
+        return true;
     }
 }
